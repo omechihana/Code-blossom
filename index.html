@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omega Chihana | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>Omega Chihana| Portfolio</h1>
+    <button id="toggle-theme">🌙</button>
+  </header>
+
+  <nav>
+    <a href="#about">ABOUT ME</a>
+    <a href="#projects">MY PROJECTS</a>
+    <a href="#contact">CONTACT ME</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="centered-section" data-aos="fade-up">
+    <div class="section-content">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate developer with a love for building beautiful, user-friendly websites. 
+        I enjoy solving problems and bringing ideas to life with code. I'm fluent in the following languages, javascript, html, css, python and csharp.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="centered-section" data-aos="fade-up">
+    <div class="section-content">
+      <h2>Projects</h2>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200" onclick="openModal()">
+        <h3>Smart Logistics System</h3>
+        <p>This system uses GPS tracking, fuel monitoring, and scheduling to optimize Unitrans Malawi Ltd's operations.</p>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Weather Dashboard</h3>
+        <p>My previous year project, it is a responsive dashboard that shows weather forecasts using OpenWeatherMap API.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <form id="contact-form">
+      <h2>Contact Me</h2>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Omega Chihana. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h3>Smart Logistics System</h3>
+      <p>This project uses GPS tracking, fuel monitoring, and web-based scheduling to optimize
+         Unitrans Malawi Ltd's operations. it is also my final year project.</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
